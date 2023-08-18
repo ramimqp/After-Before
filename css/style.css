@@ -1,0 +1,115 @@
+#main{
+    width: 600px;
+    height: 500px;
+    background: #eee;
+    position: relative;
+}
+.one{
+    width: 100px;
+    height: 100px;
+    background: #00ff00;
+    position: absolute;
+}
+.one::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    background: black;
+    width: 500px;
+    height: 5px;    
+    transform: translateY(-50%);
+}
+.one::before{
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 100px;
+    background: black;
+    width: 500px;
+    height: 5px;    
+    transform: translateY(-50%);
+}
+
+.two{
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.two::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    background: black;
+    height: 300px;
+    width: 5px;
+}
+.two::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    right: 40%;
+    background: black;
+    height: 300px;
+    width: 5px;
+}
+.three{
+    width: 100px;
+    height: 100px;
+    background: cyan;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.three::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    height: 5px;
+    width: 400px;
+    background: black;
+    transform: translateY(-50%);
+}
+.three::before{
+    content: '';
+    position: absolute;
+    top: 40%;
+    right: 100%;
+    height: 5px;
+    width: 400px;
+    background: black;
+    transform: translateY(-50%);
+}
+.four{
+    width: 100px;
+    height: 100px;
+    background: #2714ff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.four::after{
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 5px;
+    height: 300px;
+    background: black;
+    transform: translateX(-50%);
+}
+.four::before{
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 40%;
+    width: 5px;
+    height: 300px;
+    background: black;
+    transform: translateX(-50%);
+}
